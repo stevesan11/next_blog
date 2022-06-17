@@ -6,9 +6,13 @@ describe("Home", () => {
 		render(<Home />);
 
 		const heading = screen.getByRole("heading", {
-			name: /welcome to next\.js!/i,
+			name: /blog space/i,
 		});
-
 		expect(heading).toBeInTheDocument();
+	});
+	it("press the icon to move to another page", () => {
+		render(<Home />);
+
+		const userIcon = screen.getByRole("button", {})
 	});
 });

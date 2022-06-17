@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	.bg-blueGray-default {
+		@apply bg-blueGrayDefault text-black/[.66];
+	}
+	.bg-blueGray-light {
+		@apply bg-blueGrayLight text-black/[.57];
+	}
+	.bg-blueGray-dark {
+		@apply bg-blueGrayDark text-white/[.95];
+	}
+	.bg-teal-default {
+		@apply bg-tealDefault text-black/[.64];
+	}
+	.bg-teal-light {
+		@apply bg-tealLight text-black/[.56];
+	}
+	.bg-teal-dark {
+		@apply bg-tealDark text-black/[.93];
+	}
+}
