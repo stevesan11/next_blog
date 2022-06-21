@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
+import CloseIcon from "../icons/CloseIcon";
 
-import SearchSVG from "@/images/search.svg";
-import CloseSVG from "@/images/x.svg";
+import SearchIcon from "../icons/SearchIcon";
 
 const SearchBar = () => {
 	const searchRef = useRef<HTMLInputElement>(null);
@@ -31,9 +31,7 @@ const SearchBar = () => {
 			className="flex gap-2 items-center w-36 sm:w-42 lg:w-60 h-6 sm:h-8 px-3 rounded-xl bg-white drop-shadow-xl"
 			onSubmit={submitHandler}
 		>
-			<button onClick={searchClickHandler}>
-				<SearchSVG className="w-4 h-4" />
-			</button>
+			<SearchIcon onClick={searchClickHandler} />
 			<input
 				type="text"
 				id="search"
@@ -44,9 +42,7 @@ const SearchBar = () => {
 				value={searchVal}
 				onChange={handleChange}
 			/>
-			<button onClick={deleteHandler}>
-				<CloseSVG className="w-5 h-5" />
-			</button>
+			<CloseIcon onClick={deleteHandler} />
 		</form>
 	);
 };
