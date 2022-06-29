@@ -1,4 +1,4 @@
-import { blog, mdData } from "types/blog";
+import { mdData } from "types/blog";
 
 export const dummyBlogList: mdData[] = [
 	{

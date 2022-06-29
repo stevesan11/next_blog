@@ -8,7 +8,7 @@ import Category from "../ui/Category";
 
 import { useRouter } from "next/router";
 
-import { TwitterShareButton, TwitterIcon } from "react-share";
+import { TwitterShareButton, TwitterIcon, LineShareButton, LineIcon } from "react-share";
 
 type Props = {
 	id: string;
@@ -57,8 +57,11 @@ const BlogItem = (props: Props) => {
 					<h3 className="text-xl text-black/[.66]">{props.title}</h3>
 					<div className="absolute right-0 flex gap-2 mr-6">
 						<TwitterShareButton url={`http://localhost:3000/blog/${props.id}`} title={props.title}>
-							<TwitterIcon size={30} round />
+							<TwitterIcon size={25} round />
 						</TwitterShareButton>
+						<LineShareButton url={`http://localhost:3000/blog/${props.id}`} title={props.title}>
+							<LineIcon size={25} round />
+						</LineShareButton>
 					</div>
 				</div>
 				<p className="text-black/[.66]">{props.description}</p>
