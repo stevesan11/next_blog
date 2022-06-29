@@ -16,11 +16,9 @@ const Header = () => {
 						<UserSVG className="w-6 h-6 sm:w-8 sm:h-8 lg:w-11 lg:h-11 hover:text-tealDefault" />
 					</a>
 				</Link>
-				<Link href="/">
-					<a>
-						<GitSVG className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 hover:text-tealDefault" />
-					</a>
-				</Link>
+				<a href="https://github.com/stevesan11">
+					<GitSVG className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 hover:text-tealDefault" />
+				</a>
 				<SearchBar />
 			</nav>
 		</header>

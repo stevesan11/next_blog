@@ -1,17 +1,24 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import FolderIcon from "../icons/FolderIcon";
 
 type Props = {
-	children: React.ReactNode;
+	categoryName: string;
 };
-const Category = ({ children }: Props) => {
+const Category = ({ categoryName }: Props) => {
+	const router = useRouter();
 	return (
-		<p className="flex gap-1 bg-blueGray-default px-2 py-[.8px] rounded-xl">
-			<span>
-				<FolderIcon />
-			</span>
-			{children}
-		</p>
+		<li className="bg-blueGray-default px-2 py-[.8px] rounded-xl cursor-pointer list-none">
+			<Link href={"http://localhost:3000/category/" + categoryName}>
+				<a className="flex gap-1 items-center">
+					<span>
+						<FolderIcon />
+					</span>
+					<p>{categoryName}</p>
+				</a>
+			</Link>
+		</li>
 	);
 };
 

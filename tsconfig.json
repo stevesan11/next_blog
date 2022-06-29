@@ -23,6 +23,6 @@
 		},
 		"sourceMap": true
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types.d.ts"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types.d.ts", "public/__mocks__/svg.js", "__mocks__/server.js", "__mocks__/svg.js", "__mocks__/handlers.js", "jest.setup.ts", "public/__mocks__/browser.ts"],
 	"exclude": ["node_modules"]
 }

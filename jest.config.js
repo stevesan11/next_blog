@@ -7,14 +7,14 @@ const createJestConfig = nextJest({
 
 // Add any custom config to be passed to Jest
 const customJestConfig = {
-	setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
+	setupFilesAfterEnv: ["./jest.setup.js"],
 	moduleNameMapper: {
 		// Handle module aliases (this will be automatically configured for you soon)
 		"^@/components/(.*)$": "<rootDir>/components/$1",
 
 		"^@/pages/(.*)$": "<rootDir>/pages/$1",
 
-		"\\.svg": "<rootDir>/__mocks__/svg.js",
+		"\\.svg": "<rootDir>/public/__mocks__/svg.js",
 	},
 	testEnvironment: "jest-environment-jsdom",
 };
