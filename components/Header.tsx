@@ -19,7 +19,6 @@ const Header = () => {
 				<a href="https://github.com/stevesan11">
 					<GitSVG className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 hover:text-tealDefault" />
 				</a>
-				<SearchBar />
 			</nav>
 		</header>
 	);
