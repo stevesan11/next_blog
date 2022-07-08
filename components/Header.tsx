@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 
-import SearchBar from "./ui/SearchBar";
 
 import GitSVG from "@/images/github.svg";
 import UserSVG from "@/images/person-fill.svg";
