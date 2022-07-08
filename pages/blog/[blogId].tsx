@@ -74,8 +74,9 @@ const blogDetail = ({ markdown }: Props) => {
 					className="markdown-body p-3"
 					remarkPlugins={[remarkGfm]}
 					skipHtml={true}
-					children={markdown.content}
-				></ReactMarkdown>
+				>
+					{markdown.content}
+				</ReactMarkdown>
 			)}
 		</div>
 	);
