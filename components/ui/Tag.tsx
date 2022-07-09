@@ -8,7 +8,7 @@ type Props = {
 const Tag = ({ tagName }: Props) => {
 	return (
 		<li className="bg-blueGray-default px-2 py-[.8px] rounded-xl cursor-pointer list-none">
-			<Link href={"http://localhost:3000/tag/" + tagName}>
+			<Link href={`${process.env.NEXT_PUBLIC_VERCEL_URL}/tag/${tagName}`}>
 				<a className="flex gap-1 items-center">
 					<span>
 						<TagIcon />
