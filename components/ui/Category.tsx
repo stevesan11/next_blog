@@ -10,7 +10,7 @@ const Category = ({ categoryName }: Props) => {
 	const router = useRouter();
 	return (
 		<li className="bg-blueGray-default px-2 py-[.8px] rounded-xl cursor-pointer list-none">
-			<Link href={`${process.env.NEXT_PUBLIC_VERCEL_URL}/category/${categoryName}`}>
+			<Link href={`/category/${categoryName}`}>
 				<a className="flex gap-1 items-center">
 					<span>
 						<FolderIcon />
