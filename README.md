@@ -1,1 +1,1 @@
-next-blog-plbtyfvye-stevesan11.vercel.app
+https://next-blog-plbtyfvye-stevesan11.vercel.app/
